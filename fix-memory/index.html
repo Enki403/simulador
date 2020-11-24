@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory management simulator</title>
+    <link rel="stylesheet" href="./fix.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/ef3dcc44be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 class="container-title">Settings</h2>
+            
+            <label for="load-process">► Cargar Proceso</label>
+            <input type="number" name="load-process" id="load-process" class="load-process">
+            <span>MB</span>
+
+            <button type="button" class="load-btn">Cargar</button>
+
+            <hr>
+
+            <label for="memory-size">► Cambiar tamaño memoria </label>
+            <input type="number" name="memory-size" id="memory-size">
+            <button type="button" class="memory-size-btn">Establecer</button>
+
+            <button type="button" class="btn-reset">Reset</button>
+
+            <hr>
+
+            <label >► Cambiar tipo de particion </label>
+            <a href="../dynamic-memory/index.html" class="links-setting"> Dynamic memory </a>
+            <a href="../buddy-memory/index.html" class="links-setting"> Buddy memory </a>
+
+            <h1 class="title-memory">You are in Fix Memory</h1>
+
+        </div>
+    
+        <div class="container-memory">
+            <h2 class="container-title">Memory management</h2>
+            
+            <div class="container-memory-aux">
+                <div class="memory">
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                    <div class="partition"><h6>8 MB</h6></div>
+                </div>
+
+                <div class="memory memory-variable">
+                    <div class="partition" style="height: 5%;"><h6>3.2 MB</h6></div>
+                    <div class="partition" style="height: 5%;"><h6>3.2 MB</h6></div>
+                    <div class="partition" style="height: 5%;"><h6>3.2 MB</h6></div>
+                    <div class="partition" style="height: 10%;"><h6>6.4 MB</h6></div>
+                    <div class="partition" style="height: 10%;"><h6>6.4 MB</h6></div>
+                    <div class="partition" style="height: 15%;"><h6>9.6 MB</h6></div>
+                    <div class="partition" style="height: 20%;"><h6>12.8 MB</h6></div>
+                    <div class="partition" style="height: 30%;"><h6>19.2 MB</h6></div>               
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="fix.js"></script>
+</body>
+</html>

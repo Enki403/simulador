@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: sans-serif;
+    --container-background: #424651;
+    --sidebar-background: #f4f4ed;
+    --container-memory-background: #f4f4ed;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--container-background);
+}
+
+.container .sidebar{
+    width: 24%;
+    height: 100%;
+    margin-right: 20px;
+    padding: 0 2% 2% 2%;
+
+    border-radius: 14px;
+    background-color: var(--sidebar-background);
+    position: relative;
+}
+
+.container .container-memory{
+    width: 75%;
+    background-color: black;
+    height: 100%;
+
+    border-radius: 14px;
+    background-color: var(--container-memory-background);
+}
+
+div > .container-title{
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+
+.container-memory-aux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 89%;
+}
+
+.memory{
+    width: 25%;
+    height: 90%;
+    margin: 0 15px;
+    border: 2px #424651 solid;
+    position: relative;
+}
+
+.memory > .partition{
+    width: 100%;
+    height: 12.5%;
+    border: 1px solid #648de5;
+    background-color: white;
+    position: relative;
+}
+
+h6,i{
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    color: #424651;
+}
+
+i{
+    right: 5px;
+    bottom: 2px;
+    color: #a20021;
+}
+
+i:hover{
+    cursor: pointer;
+    color: #f52f57;
+}
+
+.partition .active{
+    background-color: #c9c9c9;
+    width: 100%;
+}
+
+.partition.inactive{
+    visibility: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#partition-aux{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 0;
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+    margin: 5% 0;
+}
+
+hr{
+    margin:10px 0;
+}
+
+.load-btn,
+.btn-reset,
+.memory-size-btn{
+    all: unset;
+    width: 100%;
+    margin: 3% 0;
+    height: 5%;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #fff; 
+    text-align: center;
+}
+
+.load-btn{
+    background-color: #3f826d;
+}
+
+.load-btn:hover{
+    background-color: #94fbab;
+}
+
+.btn-reset,
+.memory-size-btn{
+    background-color: #a20021;
+}
+
+.btn-reset:hover,
+.memory-size-btn:hover{
+    background-color: #f52f57;
+}
+
+.sidebar > input{
+    height: 5%;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+.memory-size-btn{
+    width: 43%;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    margin-left: 5%;
+}
+
+.ubication-type{
+    width: 30%;
+    margin-left: 5%;
+    font-size: 1rem;
+}
+
+
+.links-setting{
+    text-decoration: none;
+    color: #1d70a2;
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.links-setting:hover{
+    color: #0d5d56;
+}
+
+.title-memory{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+}
